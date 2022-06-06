@@ -10,6 +10,7 @@ import (
 	"github.com/timescale/tsbs/pkg/targets/crate"
 	"github.com/timescale/tsbs/pkg/targets/influx"
 	"github.com/timescale/tsbs/pkg/targets/mongo"
+	"github.com/timescale/tsbs/pkg/targets/pinot"
 	"github.com/timescale/tsbs/pkg/targets/prometheus"
 	"github.com/timescale/tsbs/pkg/targets/questdb"
 	"github.com/timescale/tsbs/pkg/targets/siridb"
@@ -45,6 +46,8 @@ func GetTarget(format string) targets.ImplementedTarget {
 		return timestream.NewTarget()
 	case constants.FormatQuestDB:
 		return questdb.NewTarget()
+	case constants.FormatPinot:
+		return pinot.NewTarget()
 	}
 
 	supportedFormatsStr := strings.Join(constants.SupportedFormats(), ",")

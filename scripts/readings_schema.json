@@ -1,0 +1,75 @@
+{
+  "metricFieldSpecs": [
+    {
+      "dataType": "INT",
+      "name": "elevation"
+    },
+    {
+      "dataType": "INT",
+      "name": "velocity"
+    },
+    {
+      "dataType": "INT",
+      "name": "heading"
+    },
+    {
+      "dataType": "INT",
+      "name": "grade"
+    },
+    {
+      "dataType": "FLOAT",
+      "name": "load_capacity"
+    },
+    {
+      "dataType": "FLOAT",
+      "name": "fuel_capacity"
+    },
+    {
+      "dataType": "FLOAT",
+      "name": "nominal_fuel_consumption"
+    },
+    {
+      "dataType": "FLOAT",
+      "name": "latitude"
+    },
+    {
+      "dataType": "FLOAT",
+      "name": "longitude"
+    },
+    {
+      "dataType": "FLOAT",
+      "name": "fuel_consumption"
+    }
+  ],
+  "dimensionFieldSpecs": [
+    {
+      "dataType": "STRING",
+      "name": "name"
+    },
+    {
+      "dataType": "STRING",
+      "name": "fleet"
+    },
+    {
+      "dataType": "STRING",
+      "name": "driver"
+    },
+    {
+      "dataType": "STRING",
+      "name": "model"
+    },
+    {
+      "dataType": "STRING",
+      "name": "device_version"
+    }
+  ],
+  "dateTimeFieldSpecs": [
+    {
+      "name": "timestamp",
+      "dataType": "LONG",
+      "format": "1:MILLISECONDS:EPOCH",
+      "granularity": "1:MILLISECONDS"
+    }
+  ],
+  "schemaName": "readings"
+}
